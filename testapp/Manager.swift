@@ -7,6 +7,15 @@
 
 import Foundation
 
-class Manager {
-    
+class NumberManager: ObservableObject {
+    @Published var x = 0
+    func plus() {
+        x += 1
+        print(x)
+    }
+    func minus() {
+        x -= 1
+        print(x)
+    }
 }
+
