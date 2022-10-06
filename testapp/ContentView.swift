@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    let manager = Manager()
+    @ObservedObject var korobka = NumberManager()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack{
+                Button("+") {
+                //action
+                    korobka.plus()
+                }
+                Text("\(korobka.x)")
+                Button("-") {
+                //action
+                    korobka.minus()
+                }
+            }
         }
         .padding()
     }
