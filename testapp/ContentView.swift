@@ -13,22 +13,22 @@ struct ContentView: View {
         VStack {
             Button ("*") {
                 //action
-                
+                manager.multiplication()
             }
             HStack{
                 Button ("-") {
                     //action
-                    
+                    manager.minus()
                 }
-                Text (("x.korobka"))
+                Text ("\(manager.x)")
                 Button ("+") {
                     //action
-                    
+                    manager.plus()
                 }
             }
             Button("/") {
                 //action
-                
+                manager.division()
             }
         }
         .padding()

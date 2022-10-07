@@ -11,14 +11,21 @@ class korobka {
     var x = 0
     func minus () {
         x -= 1
+        print (x)
     }
     func plus () {
         x += 1
+        print (x)
+
     }
     func multiplication () {
         x *= 3
+        print (x)
+
     }
     func division () {
         x /= 3
+        print (x)
+
     }
 }
