@@ -7,6 +7,17 @@
 
 import Foundation
 
-class Manager {
-    
+class x {
+    func minus () {
+        
+    }
+    func plus () {
+        
+    }
+    func multiplication () {
+        
+    }
+    func division () {
+        
+    }
 }

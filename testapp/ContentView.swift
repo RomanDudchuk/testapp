@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    let manager = Manager()
+    let manager = x()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack{
+                Button ("-") {
+                //x.minus(x)
+                }
+            }
         }
         .padding()
     }
