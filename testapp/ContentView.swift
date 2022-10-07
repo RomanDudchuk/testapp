@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    let manager = korobka()
+   @ObservedObject var manager = Korobka()
     var body: some View {
         VStack {
+            Spacer()
             Button ("*") {
                 //action
                 manager.multiplication()
@@ -29,6 +30,22 @@ struct ContentView: View {
             Button("/") {
                 //action
                 manager.division()
+            }
+            Spacer()
+            HStack{
+                Button ("100") {
+                    manager.one()
+                }
+                Button ("200") {
+                    manager.two()
+                }
+                Button ("300") {
+                    manager.three()
+                }
+            }
+            Spacer()
+            Button ("Test"){
+                manager.test()
             }
         }
         .padding()
