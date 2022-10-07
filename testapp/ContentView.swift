@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    let manager = x()
+    let manager = korobka()
     var body: some View {
         VStack {
+            Button ("*") {
+                //action
+                
+            }
             HStack{
                 Button ("-") {
-                //x.minus(x)
+                    //action
+                    
                 }
+                Text (("x.korobka"))
+                Button ("+") {
+                    //action
+                    
+                }
+            }
+            Button("/") {
+                //action
+                
             }
         }
         .padding()
